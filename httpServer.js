@@ -7,7 +7,7 @@ import {DeviceEventEmitter} from 'react-native';
 import {NativeModules} from 'react-native';
 var Server = NativeModules.HttpServer;
 
-module.exports = {
+export default {
     start: function (port, serviceName, callback) {
         if (port == 80) {
             throw "Invalid server port specified. Port 80 is reserved.";
